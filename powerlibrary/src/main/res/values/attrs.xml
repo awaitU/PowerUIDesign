@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <declare-styleable name="AnimatedCircleLoadingView">
+        <attr name="animCircleLoadingView_mainColor" format="color" localization="suggested" />
+        <attr name="animCircleLoadingView_secondaryColor" format="color" localization="suggested" />
+        <attr name="animCircleLoadingView_checkMarkTintColor" format="color" localization="suggested" />
+        <attr name="animCircleLoadingView_failureMarkTintColor" format="color" localization="suggested" />
+        <attr name="animCircleLoadingView_textColor" format="color" localization="suggested" />
+    </declare-styleable>
+    <declare-styleable name="WaveSideBarView">
+        <attr name="sidebarTextColor" format="color|reference"/>
+        <attr name="sidebarBackgroundColor" format="color|reference"/>
+        <attr name="sidebarChooseTextColor" format="color|reference"/>
+        <attr name="sidebarTextSize" format="dimension"/>
+        <attr name="sidebarLargeTextSize" format="dimension"/>
+        <attr name="sidebarRadius" format="dimension"/>
+        <attr name="sidebarBallRadius" format="dimension"/>
+    </declare-styleable>
+</resources>

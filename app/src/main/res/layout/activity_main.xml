@@ -1,0 +1,37 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background">
+
+    <Button
+        android:id="@+id/splashAnimation"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="引导页动效"/>
+
+    <Button
+        android:id="@+id/downloadAnimation"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="下载动效"
+        android:layout_below="@+id/listAnimation"
+        android:layout_alignParentStart="true" />
+
+    <Button
+        android:id="@+id/menuAnimation"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="菜单动效"
+        android:layout_below="@+id/downloadAnimation"
+        android:layout_alignParentStart="true" />
+
+    <Button
+        android:id="@+id/listAnimation"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="列表动效"
+        android:layout_below="@+id/splashAnimation"
+        android:layout_alignParentStart="true" />
+
+
+</RelativeLayout>
