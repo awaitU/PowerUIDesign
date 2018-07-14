@@ -14,7 +14,7 @@ import com.awaitu.allen.acllibrary.animator.AnimationState;
 /**
  * @author jlmd
  */
-public class RightCircleView extends ComponentViewAnimation {
+public class RightCircleView extends ComponentAnimationView {
 
   private int rightMargin;
   private int bottomMargin;

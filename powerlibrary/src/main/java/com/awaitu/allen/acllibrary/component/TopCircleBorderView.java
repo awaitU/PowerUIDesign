@@ -14,7 +14,7 @@ import com.awaitu.allen.acllibrary.animator.AnimationState;
 /**
  * @author jlmd
  */
-public class TopCircleBorderView extends ComponentViewAnimation {
+public class TopCircleBorderView extends ComponentAnimationView {
 
   private static final int MIN_ANGLE = 25;
   private static final int MAX_ANGLE = 180;

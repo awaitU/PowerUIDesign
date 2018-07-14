@@ -1,4 +1,4 @@
-package com.awaitu.allen.acllibrary.menulistener;
+package com.awaitu.allen.acllibrary.listener;
 
 
 public interface OnMenuStatusChangeListener {

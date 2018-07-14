@@ -1,4 +1,4 @@
-package com.awaitu.allen.acllibrary.slidelist;
+package com.awaitu.allen.acllibrary.adapter;
 
 import android.support.v7.widget.RecyclerView;
 import android.util.SparseArray;

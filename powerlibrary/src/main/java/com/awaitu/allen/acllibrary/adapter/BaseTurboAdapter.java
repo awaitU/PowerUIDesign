@@ -1,4 +1,4 @@
-package com.awaitu.allen.acllibrary.slidelist;
+package com.awaitu.allen.acllibrary.adapter;
 
 import android.content.Context;
 import android.support.v7.widget.GridLayoutManager;
@@ -9,6 +9,8 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 
+import com.awaitu.allen.acllibrary.listener.OnItemClickListener;
+import com.awaitu.allen.acllibrary.listener.OnLoadMoreListener;
 
 import java.util.ArrayList;
 import java.util.List;

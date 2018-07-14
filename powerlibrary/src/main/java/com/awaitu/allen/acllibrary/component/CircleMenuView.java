@@ -1,4 +1,4 @@
-package com.awaitu.allen.acllibrary.menulistener;
+package com.awaitu.allen.acllibrary.component;
 
 import android.animation.Animator;
 import android.animation.AnimatorListenerAdapter;
@@ -26,11 +26,14 @@ import android.view.animation.AnticipateInterpolator;
 import android.view.animation.LinearInterpolator;
 import android.view.animation.OvershootInterpolator;
 
+import com.awaitu.allen.acllibrary.listener.OnMenuSelectedListener;
+import com.awaitu.allen.acllibrary.listener.OnMenuStatusChangeListener;
+
 import java.util.ArrayList;
 import java.util.List;
 
 
-public class CircleMenu extends View {
+public class CircleMenuView extends View {
 
     private static final int STATUS_MENU_OPEN = 1;
 
@@ -96,15 +99,15 @@ public class CircleMenu extends View {
 
     private OnMenuStatusChangeListener onMenuStatusChangeListener;
 
-    public CircleMenu(Context context) {
+    public CircleMenuView(Context context) {
         this(context, null);
     }
 
-    public CircleMenu(Context context, AttributeSet attrs) {
+    public CircleMenuView(Context context, AttributeSet attrs) {
         this(context, attrs, 0);
     }
 
-    public CircleMenu(Context context, AttributeSet attrs, int defStyleAttr) {
+    public CircleMenuView(Context context, AttributeSet attrs, int defStyleAttr) {
         super(context, attrs, defStyleAttr);
         status = STATUS_MENU_CLOSED;
         init();
@@ -671,7 +674,7 @@ public class CircleMenu extends View {
      * @param closeMenuRes  菜单关闭图标，Resource 格式
      * @return
      */
-    public CircleMenu setMainMenu(int mainMenuColor, int openMenuRes, int closeMenuRes) {
+    public CircleMenuView setMainMenu(int mainMenuColor, int openMenuRes, int closeMenuRes) {
         openMenuIcon = convertDrawable(openMenuRes);
         closeMenuIcon = convertDrawable(closeMenuRes);
         this.mainMenuColor = mainMenuColor;
@@ -686,7 +689,7 @@ public class CircleMenu extends View {
      * @param closeMenuBitmap 菜单关闭图标，Bitmap 格式
      * @return
      */
-    public CircleMenu setMainMenu(int mainMenuColor, Bitmap openMenuBitmap, Bitmap closeMenuBitmap) {
+    public CircleMenuView setMainMenu(int mainMenuColor, Bitmap openMenuBitmap, Bitmap closeMenuBitmap) {
         openMenuIcon = convertBitmap(openMenuBitmap);
         closeMenuIcon = convertBitmap(closeMenuBitmap);
         this.mainMenuColor = mainMenuColor;
@@ -701,7 +704,7 @@ public class CircleMenu extends View {
      * @param closeMenuDrawable 菜单关闭图标，Drawable 格式
      * @return
      */
-    public CircleMenu setMainMenu(int mainMenuColor, Drawable openMenuDrawable, Drawable closeMenuDrawable) {
+    public CircleMenuView setMainMenu(int mainMenuColor, Drawable openMenuDrawable, Drawable closeMenuDrawable) {
         openMenuIcon = openMenuDrawable;
         closeMenuIcon = closeMenuDrawable;
         this.mainMenuColor = mainMenuColor;
@@ -715,7 +718,7 @@ public class CircleMenu extends View {
      * @param menuRes   子菜单图标，Resource 格式
      * @return
      */
-    public CircleMenu addSubMenu(int menuColor, int menuRes) {
+    public CircleMenuView addSubMenu(int menuColor, int menuRes) {
         if (subMenuColorList.size() < MAX_SUBMENU_NUM && subMenuDrawableList.size() < MAX_SUBMENU_NUM) {
             subMenuColorList.add(menuColor);
             subMenuDrawableList.add(convertDrawable(menuRes));
@@ -731,7 +734,7 @@ public class CircleMenu extends View {
      * @param menuBitmap 子菜单图标，Bitmap 格式
      * @return
      */
-    public CircleMenu addSubMenu(int menuColor, Bitmap menuBitmap) {
+    public CircleMenuView addSubMenu(int menuColor, Bitmap menuBitmap) {
         if (subMenuColorList.size() < MAX_SUBMENU_NUM && subMenuDrawableList.size() < MAX_SUBMENU_NUM) {
             subMenuColorList.add(menuColor);
             subMenuDrawableList.add(convertBitmap(menuBitmap));
@@ -747,7 +750,7 @@ public class CircleMenu extends View {
      * @param menuDrawable 子菜单图标，Drawable 格式
      * @return
      */
-    public CircleMenu addSubMenu(int menuColor, Drawable menuDrawable) {
+    public CircleMenuView addSubMenu(int menuColor, Drawable menuDrawable) {
         if (subMenuColorList.size() < MAX_SUBMENU_NUM && subMenuDrawableList.size() < MAX_SUBMENU_NUM) {
             subMenuColorList.add(menuColor);
             subMenuDrawableList.add(menuDrawable);
@@ -788,12 +791,12 @@ public class CircleMenu extends View {
         return status == STATUS_MENU_OPENED;
     }
 
-    public CircleMenu setOnMenuSelectedListener(OnMenuSelectedListener listener) {
+    public CircleMenuView setOnMenuSelectedListener(OnMenuSelectedListener listener) {
         this.onMenuSelectedListener = listener;
         return this;
     }
 
-    public CircleMenu setOnMenuStatusChangeListener(OnMenuStatusChangeListener listener) {
+    public CircleMenuView setOnMenuStatusChangeListener(OnMenuStatusChangeListener listener) {
         this.onMenuStatusChangeListener = listener;
         return this;
     }

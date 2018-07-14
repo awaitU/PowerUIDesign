@@ -5,23 +5,23 @@ import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
 import android.view.Menu;
 
-import com.awaitu.allen.acllibrary.menulistener.CircleMenu;
-import com.awaitu.allen.acllibrary.menulistener.OnMenuSelectedListener;
-import com.awaitu.allen.acllibrary.menulistener.OnMenuStatusChangeListener;
+import com.awaitu.allen.acllibrary.component.CircleMenuView;
+import com.awaitu.allen.acllibrary.listener.OnMenuSelectedListener;
+import com.awaitu.allen.acllibrary.listener.OnMenuStatusChangeListener;
 
 
 public class MenuAnimationActivity extends AppCompatActivity {
 
-    private CircleMenu circleMenu;
+    private CircleMenuView circleMenuView;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_menu_animation);
 
-        circleMenu = (CircleMenu) findViewById(R.id.circle_menu);
+        circleMenuView = (CircleMenuView) findViewById(R.id.circle_menu);
 
-        circleMenu.setMainMenu(Color.parseColor("#CDCDCD"), R.mipmap.icon_menu, R.mipmap.icon_cancel)
+        circleMenuView.setMainMenu(Color.parseColor("#CDCDCD"), R.mipmap.icon_menu, R.mipmap.icon_cancel)
                 .addSubMenu(Color.parseColor("#258CFF"), R.mipmap.icon_home)
                 .addSubMenu(Color.parseColor("#30A400"), R.mipmap.icon_search)
                 .addSubMenu(Color.parseColor("#FF4B32"), R.mipmap.icon_notify)
@@ -45,7 +45,7 @@ public class MenuAnimationActivity extends AppCompatActivity {
 
     @Override
     public boolean onMenuOpened(int featureId, Menu menu) {
-        circleMenu.openMenu();
+        circleMenuView.openMenu();
         return super.onMenuOpened(featureId, menu);
     }
 }

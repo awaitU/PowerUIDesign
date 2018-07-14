@@ -8,8 +8,6 @@ import android.widget.TextView;
 
 import com.awaitu.allen.acllibrary.R;
 import com.awaitu.allen.acllibrary.bean.City;
-import com.awaitu.allen.acllibrary.slidelist.BaseTurboAdapter;
-import com.awaitu.allen.acllibrary.slidelist.BaseViewHolder;
 
 
 import java.util.List;

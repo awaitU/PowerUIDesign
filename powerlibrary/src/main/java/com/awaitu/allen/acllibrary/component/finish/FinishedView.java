@@ -10,13 +10,13 @@ import android.graphics.LightingColorFilter;
 import android.graphics.Paint;
 
 import com.awaitu.allen.acllibrary.animator.AnimationState;
-import com.awaitu.allen.acllibrary.component.ComponentViewAnimation;
+import com.awaitu.allen.acllibrary.component.ComponentAnimationView;
 
 
 /**
  * @author jlmd
  */
-public abstract class FinishedView extends ComponentViewAnimation {
+public abstract class FinishedView extends ComponentAnimationView {
 
   private static final int MIN_IMAGE_SIZE = 1;
   protected final int tintColor;

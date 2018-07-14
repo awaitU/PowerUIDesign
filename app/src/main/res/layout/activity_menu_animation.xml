@@ -5,7 +5,7 @@
     android:layout_height="match_parent"
     tools:context="com.awaitu.allen.poweruidesign.activity.MenuAnimationActivity">
 
-    <com.awaitu.allen.acllibrary.menulistener.CircleMenu
+    <com.awaitu.allen.acllibrary.component.CircleMenuView
         android:id="@+id/circle_menu"
         android:layout_width="160dp"
         android:layout_height="160dp"

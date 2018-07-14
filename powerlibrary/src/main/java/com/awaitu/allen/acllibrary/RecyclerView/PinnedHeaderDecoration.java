@@ -1,4 +1,4 @@
-package com.awaitu.allen.acllibrary.other;
+package com.awaitu.allen.acllibrary.RecyclerView;
 
 import android.graphics.Canvas;
 import android.graphics.Rect;

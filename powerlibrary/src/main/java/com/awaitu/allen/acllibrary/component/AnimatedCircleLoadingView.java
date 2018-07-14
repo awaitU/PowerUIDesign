@@ -1,4 +1,4 @@
-package com.awaitu.allen.acllibrary;
+package com.awaitu.allen.acllibrary.component;
 
 import android.content.Context;
 import android.content.res.TypedArray;
@@ -6,13 +6,8 @@ import android.graphics.Color;
 import android.util.AttributeSet;
 import android.widget.FrameLayout;
 
+import com.awaitu.allen.acllibrary.R;
 import com.awaitu.allen.acllibrary.animator.ViewAnimator;
-import com.awaitu.allen.acllibrary.component.InitialCenterCircleView;
-import com.awaitu.allen.acllibrary.component.MainCircleView;
-import com.awaitu.allen.acllibrary.component.PercentIndicatorView;
-import com.awaitu.allen.acllibrary.component.RightCircleView;
-import com.awaitu.allen.acllibrary.component.SideArcsView;
-import com.awaitu.allen.acllibrary.component.TopCircleBorderView;
 import com.awaitu.allen.acllibrary.component.finish.FinishedFailureView;
 import com.awaitu.allen.acllibrary.component.finish.FinishedOkView;
 

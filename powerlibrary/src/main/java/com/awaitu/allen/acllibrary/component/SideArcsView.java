@@ -14,7 +14,7 @@ import com.awaitu.allen.acllibrary.animator.AnimationState;
 /**
  * @author jlmd
  */
-public class SideArcsView extends ComponentViewAnimation {
+public class SideArcsView extends ComponentAnimationView {
 
   private static final int MIN_RESIZE_ANGLE = 8;
   private static final int MAX_RESIZE_ANGLE = 45;

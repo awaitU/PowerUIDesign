@@ -14,7 +14,7 @@ import com.awaitu.allen.acllibrary.animator.AnimationState;
 /**
  * @author jlmd
  */
-public class InitialCenterCircleView extends ComponentViewAnimation {
+public class InitialCenterCircleView extends ComponentAnimationView {
 
   private Paint paint;
   private RectF oval;

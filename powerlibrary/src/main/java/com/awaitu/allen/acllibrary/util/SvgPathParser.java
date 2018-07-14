@@ -1,4 +1,4 @@
-package com.awaitu.allen.acllibrary.other;
+package com.awaitu.allen.acllibrary.util;
 
 import android.graphics.Path;
 import android.graphics.PointF;

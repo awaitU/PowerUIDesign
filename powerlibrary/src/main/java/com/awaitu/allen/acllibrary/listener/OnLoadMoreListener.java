@@ -1,4 +1,4 @@
-package com.awaitu.allen.acllibrary.slidelist;
+package com.awaitu.allen.acllibrary.listener;
 
 /**
  * Created by Administrator on 2018/7/13.

@@ -13,7 +13,7 @@ import com.awaitu.allen.acllibrary.animator.AnimationState;
 /**
  * @author jlmd
  */
-public class MainCircleView extends ComponentViewAnimation {
+public class MainCircleView extends ComponentAnimationView {
 
   private Paint paint;
   private RectF oval;

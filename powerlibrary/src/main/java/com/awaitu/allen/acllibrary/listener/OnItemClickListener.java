@@ -1,4 +1,4 @@
-package com.awaitu.allen.acllibrary.slidelist;
+package com.awaitu.allen.acllibrary.listener;
 
 import android.support.v7.widget.RecyclerView;
 

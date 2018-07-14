@@ -10,7 +10,7 @@ import com.awaitu.allen.acllibrary.exception.NullStateListenerException;
 /**
  * @author jlmd
  */
-public abstract class ComponentViewAnimation extends View {
+public abstract class ComponentAnimationView extends View {
 
   protected final int parentWidth;
   protected final int mainColor;
@@ -21,7 +21,7 @@ public abstract class ComponentViewAnimation extends View {
   protected int strokeWidth;
   private StateListener stateListener;
 
-  public ComponentViewAnimation(Context context, int parentWidth, int mainColor,
+  public ComponentAnimationView(Context context, int parentWidth, int mainColor,
                                 int secondaryColor) {
     super(context);
     this.parentWidth = parentWidth;

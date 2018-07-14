@@ -1,8 +1,8 @@
 package com.awaitu.allen.acllibrary.animator;
 
 
-import com.awaitu.allen.acllibrary.AnimatedCircleLoadingView;
-import com.awaitu.allen.acllibrary.component.ComponentViewAnimation;
+import com.awaitu.allen.acllibrary.component.AnimatedCircleLoadingView;
+import com.awaitu.allen.acllibrary.component.ComponentAnimationView;
 import com.awaitu.allen.acllibrary.component.InitialCenterCircleView;
 import com.awaitu.allen.acllibrary.component.MainCircleView;
 import com.awaitu.allen.acllibrary.component.PercentIndicatorView;
@@ -15,7 +15,7 @@ import com.awaitu.allen.acllibrary.component.finish.FinishedOkView;
 /**
  * @author jlmd
  */
-public class ViewAnimator implements ComponentViewAnimation.StateListener {
+public class ViewAnimator implements ComponentAnimationView.StateListener {
 
   private InitialCenterCircleView initialCenterCircleView;
   private RightCircleView rightCircleView;

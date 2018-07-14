@@ -3,7 +3,7 @@ package com.awaitu.allen.poweruidesign.activity;
 import android.app.Activity;
 import android.os.Bundle;
 
-import com.awaitu.allen.acllibrary.AnimatedCircleLoadingView;
+import com.awaitu.allen.acllibrary.component.AnimatedCircleLoadingView;
 
 
 public class DownloadDialogActivity extends Activity {

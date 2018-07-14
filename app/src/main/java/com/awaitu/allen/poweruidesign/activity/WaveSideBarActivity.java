@@ -10,8 +10,8 @@ import com.awaitu.allen.acllibrary.adapter.CityAdapter;
 import com.awaitu.allen.acllibrary.bean.City;
 import com.awaitu.allen.acllibrary.component.WaveSideBarView;
 
-import com.awaitu.allen.acllibrary.other.LetterComparator;
-import com.awaitu.allen.acllibrary.other.PinnedHeaderDecoration;
+import com.awaitu.allen.acllibrary.RecyclerView.PinnedHeaderDecoration;
+import com.awaitu.allen.acllibrary.util.LetterComparator;
 import com.google.gson.Gson;
 import com.google.gson.reflect.TypeToken;
 

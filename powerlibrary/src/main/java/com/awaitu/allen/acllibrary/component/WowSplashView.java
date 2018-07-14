@@ -15,7 +15,7 @@ import android.view.View;
 import android.view.animation.DecelerateInterpolator;
 
 import com.awaitu.allen.acllibrary.R;
-import com.awaitu.allen.acllibrary.other.SvgPathParser;
+import com.awaitu.allen.acllibrary.util.SvgPathParser;
 
 
 /**
